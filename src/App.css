@@ -1,0 +1,27 @@
+.App {
+  background-color: #ffffff;
+  text-align:center;
+  color:rgb(0, 0, 0);
+}
+.App-toolcard {
+  max-width:fit-content; 
+	margin: 0 auto !important; 
+	float: none !important; 
+  text-align: center;
+  border:thick;
+  border-style:inset;
+  border-color: slateblue;
+}
+h3 {
+  font-size: small;
+  font-family: sans-serif;
+  color: slateblue;
+
+}
+
+.App-logo {
+  text-align: center;
+  height: 40vmin;
+  pointer-events: none;
+  padding: 50px;
+}
