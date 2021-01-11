@@ -1,5 +1,5 @@
 import React from 'react';
-import 'ToolCard.css';
+// import 'ToolCard.css';
 
 function ToolCard(
   {
