@@ -1,8 +1,18 @@
-function Header({}) {
+import React from 'react';
+import 'Header.css';
+
+function Header(
+{
+    HeaderLogo, 
+    HeaderTitle, 
+    HeaderMenuHamburger
+}){
     return ( 
-    <div>
-        {}
+    <div className="Header">
+        {HeaderLogo}
+        {HeaderTitle}
+        {HeaderMenuHamburger}
     </div>
     )
 } 
-export default FilterBar;
+export default Header;

@@ -1,7 +1,23 @@
-function FilterBar({titleText}) {
+import React from 'react';
+import 'FilterBar.css';
+
+function FilterBar(
+    {   
+        categoryFilterTitle,
+        categoryFilterBox,
+        timeFilterTitle,
+        groupSizeFilterTitle,
+        groupSizeFilterBox
+    }
+) 
+{
     return ( 
-    <div>
-        {titleText}
+    <div className= "FilterBar">
+        {categoryFilterTitle}
+        {categoryFilterBox}
+        {timeFilterTitle}
+        {groupSizeFilterTitle}
+        {groupSizeFilterBox}
     </div>
     )
 } 
