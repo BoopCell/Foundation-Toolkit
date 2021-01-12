@@ -1,24 +1,22 @@
 import React from 'react';
-// import 'ToolCard.css';
-
 function ToolCard(
   {
-  cardTitle, 
-  cardCategory, 
+  Title, 
+  Category, 
   estTime,
   grpSize,
   // timeLogo,
   // grpSizeLogo,
-  cardImage
+  ImgURL,
+  Link
   }){
     return (
-    <div className="ToolCard">
-      {cardImage}
-      <h2>{cardTitle}</h2>
-      <h3>{cardCategory}</h3>
+    <div>
+      <img src = {ImgURL} alt = {Title} href = {Link}/>
+      <h2>{Title}</h2>
+      <h3>{Category}</h3>
       <h4>{estTime}</h4> <h4>{grpSize}</h4>
     </div>
   )
 }
-
 export default ToolCard;
