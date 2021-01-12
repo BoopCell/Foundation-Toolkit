@@ -7,8 +7,8 @@ function ToolCard(
   cardCategory, 
   estTime,
   grpSize,
-  timeLogo,
-  grpSizeLogo,
+  // timeLogo,
+  // grpSizeLogo,
   cardImage
   }){
     return (
@@ -16,7 +16,7 @@ function ToolCard(
       {cardImage}
       <h2>{cardTitle}</h2>
       <h3>{cardCategory}</h3>
-      {timeLogo} <h4>{estTime}</h4> {grpSizeLogo}  <h4>{grpSize}</h4>
+      <h4>{estTime}</h4> <h4>{grpSize}</h4>
     </div>
   )
 }

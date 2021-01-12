@@ -6,10 +6,10 @@ import ToolCard from './components/ToolCard/ToolCard.js';
 import FilterBar from './components/FilterBar/FilterBar.js';
 import Header from './components/Header/Header.js';
 
-import logo from './reflection.png';
-// import timelogo from './clock.png';
-// import grouplogo from './person-silhoutte.png';
-import HeaderLogo from './';
+import logo from './assets/reflection.png';
+// import timelogo from './assets/clock.png';
+// import grouplogo from './assets/person-silhoutte.png';
+// import HeaderLogo from './assets/header_logo.png';
 
 //App
 function App() {
@@ -18,10 +18,10 @@ function App() {
     <>
       <Header
         HeaderLogo=""
-        //HeaderLogo = {<img src={}/>} 
+        // HeaderLogo = {<img src={}/> alt=""} 
         HeaderTitle="Methods and Tools curated by Innovation and Incubation"
-        // HeaderMenuHamburger = {<img src={...}/>}
-        HeaderMenuHamburger=""
+        // HeaderMenuHamburger = {<img src={}/> alt=""}
+        HeaderMenuHamburger="MENU"
       />
 
       <FilterBar
@@ -36,11 +36,11 @@ function App() {
       <ToolCard
         cardTitle="End of Year Reflection"
         cardCategory="SELF-LEADERSHIP"
-        estTime="15-60min"
+        estTime="15-60 min"
         grpSize="2-10"
 
         //Do I import the images here or should I do it within the component? Now I "send" the image to the comnponent who then sends it back...
-        // cardImage={<img src={logo} />}
+        cardImage={<img src={logo} alt= "CardImage"/>}
         // timeLogo={<img src={timelogo} />}
         // grpSizeLogo={<img src={grouplogo} />}
       />
@@ -55,7 +55,7 @@ export default App;
 
 
 // TODO:
-// - Read about JSX
+// - Read about .map
 
 // Questions:
 // - Do I create a separate component to hold the ToolCards? 
