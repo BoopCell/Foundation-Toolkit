@@ -12,7 +12,7 @@ function ToolCard(
   }){
     return (
     <li>
-      <img src = {ImgURL} alt = {Title} href = {Link}/>
+      <a href = {Link}><img src = {ImgURL} alt = {Title}/></a>
       <h2>{Title}</h2>
       <h3>{Category}</h3>
       <h4>{estTime}</h4> <h4>{grpSize}</h4>
