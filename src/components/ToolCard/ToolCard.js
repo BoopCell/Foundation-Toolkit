@@ -11,12 +11,12 @@ function ToolCard(
   Link
   }){
     return (
-    <div>
+    <li>
       <img src = {ImgURL} alt = {Title} href = {Link}/>
       <h2>{Title}</h2>
       <h3>{Category}</h3>
       <h4>{estTime}</h4> <h4>{grpSize}</h4>
-    </div>
+    </li>
   )
 }
 export default ToolCard;

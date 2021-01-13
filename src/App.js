@@ -6,6 +6,7 @@ import FilterBar from './components/FilterBar/FilterBar.js';
 import Header from './components/Header/Header.js';
 import CardGrid from './components/CardGrid/CardGrid.js';
 import ToolCard from './components/ToolCard/ToolCard.js';
+import ToolDetails from './assets/ToolDetails.js';
 //import ToolDetails from './assets/ToolDetails.js';
 
 //App
@@ -30,7 +31,7 @@ function App() {
         groupSizeFilterBox="2-10"
       />
       <CardGrid
-      ToolCard = {<ToolCard/>}
+      ToolCard = {ToolDetails}
       />
     </>
 
