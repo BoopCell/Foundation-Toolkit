@@ -1,20 +1,20 @@
 import React from 'react';
-// import ToolDetails from '../assets/ToolDetails.js'; 
-import ToolCard from '../ToolCard/ToolCard.js'
+import ToolDetails from '../../assets/ToolDetails'; 
+import ToolCard from '../ToolCard/ToolCard'
 // import 'CardGrid.css';
 
-
 //Loop and output the grid
-function CardGrid({ToolDetails}) {
-    const listItems = ToolDetails.map((Title,Category,TimeEst,ImgURL,GroupSizeEst,Link) => 
+function CardGrid(data) {
+    console.log(ToolDetails)
+    const listItems = data.map((item) => 
             <ToolCard 
-            key = {Title}
-            cardTitle = {Title} 
-            cardCategory = {Category}
-            estTime = {TimeEst} 
-            ImgURL = {ImgURL} 
-            estGrpSize = {GroupSizeEst}
-            cardLink = {Link}
+            key = {item.Title}
+            cardTitle = {item.Title} 
+            cardCategory = {item.Category}
+            estTime = {item.TimeEst} 
+            ImgURL = {item.ImgURL} 
+            estGrpSize = {item.GroupSizeEst}
+            cardLink = {item.Link}
             />
     );
     return (

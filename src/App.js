@@ -31,7 +31,7 @@ function App() {
         groupSizeFilterBox="2-10"
       />
       <CardGrid
-      ToolCard = {ToolDetails}
+      data = {ToolDetails}
       />
     </>
 
