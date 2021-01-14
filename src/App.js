@@ -7,7 +7,7 @@ import Header from './components/Header/Header.js';
 import CardGrid from './components/CardGrid/CardGrid.js';
 import ToolCard from './components/ToolCard/ToolCard.js';
 import ToolDetails from './assets/ToolDetails.js';
-//import ToolDetails from './assets/ToolDetails.js';
+import FilterDetails from './assets/FilterDetails.js';
 
 //App
 function App() {
@@ -23,12 +23,7 @@ function App() {
       />
 
       <FilterBar
-        categoryFilterTitle="Browse by Category"
-        categoryFilterBox="ENERGIZERS"
-        timeFilterTitle="Time frame (minutes)"
-        timeFilterBox="5-30"
-        groupSizeFilterTitle="Group Size"
-        groupSizeFilterBox="2-10"
+      data = {FilterDetails} 
       />
       <CardGrid
       data = {ToolDetails}

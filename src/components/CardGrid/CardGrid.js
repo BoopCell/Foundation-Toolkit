@@ -6,13 +6,13 @@ import ToolCard from '../ToolCard/ToolCard'
 function CardGrid({data}) {
     const listItems = data.map((item) => 
             <ToolCard 
-            key = {item.Title}
-            cardTitle = {item.Title} 
-            cardCategory = {item.Category}
-            estTime = {item.TimeEst} 
-            ImgURL = {item.ImgURL} 
-            estGrpSize = {item.GroupSizeEst}
-            cardLink = {item.Link}
+            key = {item.title}
+            cardTitle = {item.title} 
+            cardCategory = {item.category}
+            estTime = {item.timeEst} 
+            ImgURL = {item.imgURL} 
+            estGrpSize = {item.groupSizeEst}
+            cardLink = {item.link}
             />
     );
     return (

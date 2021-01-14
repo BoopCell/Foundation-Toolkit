@@ -1,20 +1,20 @@
 import React from 'react';
 function ToolCard(
   {
-  Title, 
-  Category, 
+  title, 
+  category, 
   estTime,
   grpSize,
   // timeLogo,
   // grpSizeLogo,
-  ImgURL,
-  Link
+  imgURL,
+  link
   }){
     return (
     <li>
-      <a href = {Link}><img src = {ImgURL} alt = {Title}/></a>
-      <h2>{Title}</h2>
-      <h3>{Category}</h3>
+      <a href = {link}><img src = {imgURL} alt = {title}/></a>
+      <h2>{title}</h2>
+      <h3>{category}</h3>
       <h4>{estTime}</h4> <h4>{grpSize}</h4>
     </li>
   )
