@@ -1,13 +1,15 @@
 import React from 'react';
+
 function FilterButton(
-  {filterName,
-filterCount}){
-    return (
+  {buttonTitle},
+  {buttonSubtitle}){
+    return(
     <li>
         <button>
-            {filterName} ({filterCount})
+        {buttonTitle}
+        {buttonSubtitle}
         </button>
     </li>
   )
 }
-export default FilterButton;
+export default FilterButton ;

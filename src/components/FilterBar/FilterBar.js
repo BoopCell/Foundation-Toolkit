@@ -4,11 +4,11 @@ import FilterButton from '../FilterButton/FilterButton';
 
 function FilterBar({data}) {
     const listItems = data.map((item) => 
-            <FilterButton>
+            <FilterButton
             key = {item.desc}
             buttonTitle = {item.desc}
             buttonSubtitle = {item.count} 
-            </FilterButton>)
+            />)
     return (
         <ul>
             {listItems}

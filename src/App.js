@@ -5,7 +5,7 @@ import React from 'react';
 import FilterBar from './components/FilterBar/FilterBar.js';
 import Header from './components/Header/Header.js';
 import CardGrid from './components/CardGrid/CardGrid.js';
-import ToolCard from './components/ToolCard/ToolCard.js';
+// import ToolCard from './components/ToolCard/ToolCard.js';
 import ToolDetails from './assets/ToolDetails.js';
 import FilterDetails from './assets/FilterDetails.js';
 
@@ -23,7 +23,7 @@ function App() {
       />
 
       <FilterBar
-      data = {FilterDetails} 
+      data = {FilterDetails}
       />
       <CardGrid
       data = {ToolDetails}

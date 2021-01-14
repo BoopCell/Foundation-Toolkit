@@ -22,4 +22,4 @@ const ToolDetails = [
         link: "https://toolbox.hyperisland.com/the-grow-coaching-model"}
 ]
 
-export default ToolDetails
+export default ToolDetails;
