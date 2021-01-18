@@ -1,5 +1,7 @@
 const FilterDetails = {
-    categories: [
+    categories: {
+        title: "Browse by Category",
+        list: [
         {
             desc: "ENERGIZERS",
             count: 15
@@ -28,7 +30,7 @@ const FilterDetails = {
             desc: "ALL",
             count: 103
         }
-    ],
+    ]},
     timeFrames: [
         {
             desc: "5-30",
@@ -47,7 +49,7 @@ const FilterDetails = {
             count: " "
         }
     ],
-    groupSize: [
+    groupSizes: [
         {
             desc: "2-10",
             count: " "

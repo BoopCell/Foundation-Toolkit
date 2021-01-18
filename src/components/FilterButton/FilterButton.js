@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Remember that this is the way you destructure and use props!
 function FilterButton(
   {buttonTitle,
   buttonSubtitle}){

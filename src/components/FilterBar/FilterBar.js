@@ -3,16 +3,18 @@ import React from 'react';
 import FilterButton from '../FilterButton/FilterButton';
 
 function FilterBar({data}) {
-    const listItems = data.map((item) => 
-            <FilterButton
-            key = {item.desc}
-            buttonTitle = {item.desc}
-            buttonSubtitle = {item.count} 
-            />)
     return (
-        <ul>
-            {listItems}
-        </ul>
+        <>
+        <FilterCategory 
+        listOfData = {data.categories}
+        />
+        <FilterCategory
+        listOfData = {data.timeFrames}
+        />
+        <FilterCategory
+        listOfData = {data.groupSizes}
+        />
+        </>
     )
 }
 export default FilterBar;
