@@ -1,8 +1,8 @@
 import React from 'react';
 
 function FilterButton(
-  {buttonTitle},
-  {buttonSubtitle}){
+  {buttonTitle,
+  buttonSubtitle}){
     return(
     <li>
         <button>
