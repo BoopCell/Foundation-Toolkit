@@ -3,6 +3,7 @@ import React from 'react';
 import FilterButton from '../FilterButton/FilterButton';
 
 function FilterCategory({listOfData}) {
+    console.log(listOfData);
     const listItems = listOfData.list.map((item) => 
             <FilterButton
             key = {item.desc}
@@ -18,4 +19,4 @@ function FilterCategory({listOfData}) {
         </div>
     )
 }
-export default FilterBar;
+export default FilterCategory;

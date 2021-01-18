@@ -31,7 +31,9 @@ const FilterDetails = {
             count: 103
         }
     ]},
-    timeFrames: [
+    timeFrames: {
+        title: "Browse by Category",
+        list: [
         {
             desc: "5-30",
             count: " "
@@ -48,8 +50,10 @@ const FilterDetails = {
             desc: "120-240",
             count: " "
         }
-    ],
-    groupSizes: [
+    ]},
+    groupSizes: {
+        title: "Browse by Category",
+        list: [
         {
             desc: "2-10",
             count: " "
@@ -62,7 +66,6 @@ const FilterDetails = {
             desc: "40+",
             count: " "
         }
-    ]
+    ]}
 }
-
 export default FilterDetails;
