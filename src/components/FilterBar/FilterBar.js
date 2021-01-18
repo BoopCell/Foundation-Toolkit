@@ -7,12 +7,15 @@ function FilterBar({data}) {
         <>
         <FilterCategory 
         listOfData = {data.categories}
+        buttonSize = "large"
         />
         <FilterCategory
         listOfData = {data.timeFrames}
+        buttonSize = "medium"
         />
         <FilterCategory
         listOfData = {data.groupSizes}
+        buttonSize = "small"
         />
         </>
     )
