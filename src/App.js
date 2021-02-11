@@ -25,6 +25,9 @@ function App() {
       <FilterBar
       data = {FilterDetails}
       />
+
+      <ToolGridHeader/>
+
       <CardGrid
       data = {ToolDetails}
       />
