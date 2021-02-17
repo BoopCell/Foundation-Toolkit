@@ -2,12 +2,13 @@
 
 // - Enable import a separate image for each time I use this component
 import React from 'react';
-import FilterBar from './components/FilterBar/FilterBar.js';
-import Header from './components/Header/Header.js';
-import CardGrid from './components/CardGrid/CardGrid.js';
-// import ToolCard from './components/ToolCard/ToolCard.js';
-import ToolDetails from './assets/ToolDetails.js';
-import FilterDetails from './assets/FilterDetails.js';
+import FilterBar from './components/FilterBar/FilterBar';
+import Header from './components/Header/Header';
+import CardGrid from './components/CardGrid/CardGrid';
+import GridHeader from './components/GridHeader/GridHeader';
+import ToolDetails from './assets/ToolDetails';
+import FilterDetails from './assets/FilterDetails';
+
 
 //App
 function App() {
@@ -26,7 +27,7 @@ function App() {
       data = {FilterDetails}
       />
 
-      <ToolGridHeader/>
+      <GridHeader/>
 
       <CardGrid
       data = {ToolDetails}
@@ -43,11 +44,12 @@ export default App;
 
 // TODO:
 // - Read about .map
+// - Read on "Styled Components"(npm library needs to be installed) 
+// - Read on "CSS Modules" (Used at H&M) (middle way between above and below, npm library that needs to be installed)
+// - Read on "CSS file in folder"
+// - Install CSS modules
+// - Enable SESS & SCSS (read and install, will have to make some mods to webpack)
+// - Start adding styling using CSS modules
 
 // Questions:
-      //<ToolCard
-        // timeLogo={<img src={timelogo} />}
-        // grpSizeLogo={<img src={grouplogo} />}
-      // />
-// - Do I create a separate component to hold the ToolCards? 
 // - Do you usually create the entire structure before adding styling or what does the workflow look like?

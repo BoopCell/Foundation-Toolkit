@@ -1,17 +1,17 @@
 import React from 'react';
-import SortByButton from '../SortByButton/SortByButton';
+import Button from '../Button';
 // import 'ToolGridHeader.css';
 
 function ToolGridHeader(){
     return (
     <>
-        <SortByButton
+        <Button
         title = "LATEST"
         />
-        <SortByButton
+        <Button
         title = "A-Z"
         />
-        <ShowFeaturedButton
+        <Button
         title = "SHOW FEATURED"
         />
     </>

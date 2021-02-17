@@ -1,7 +1,7 @@
 import React from 'react';
 // import '.css';
 
-function SortByButton(
+function Button(
 {
     title
 }){
@@ -11,4 +11,4 @@ function SortByButton(
             </button>
     )
 } 
-export default SortByButton;
+export default Button;
