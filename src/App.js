@@ -9,17 +9,13 @@ import GridHeader from './components/GridHeader/GridHeader';
 import ToolDetails from './assets/ToolDetails';
 import FilterDetails from './assets/FilterDetails';
 
-
 //App
 function App() {
   return (
-    //Fragment
     <>
       <Header
         HeaderLogo=""
-        // HeaderLogo = {<img src={}/> alt=""} 
         HeaderTitle="Methods and Tools curated by Innovation and Incubation"
-        // HeaderMenuHamburger = {<img src={}/> alt=""}
         HeaderMenuHamburger="MENU"
       />
 
@@ -33,14 +29,10 @@ function App() {
       data = {ToolDetails}
       />
     </>
-
   )
 }
 
 export default App;
-
-
-
 
 // TODO:
 // - Read about .map
