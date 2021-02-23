@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from '../Button';
-// import 'ToolGridHeader.css';
+import Styles from './GridHeader.module.css';
 
-function ToolGridHeader(){
+function GridHeader(){
     return (
-    <>
+    <div className = {Styles.gridHeader}>
         <Button
         title = "LATEST"
         />
@@ -14,7 +14,7 @@ function ToolGridHeader(){
         <Button
         title = "SHOW FEATURED"
         />
-    </>
+    </div>
     )
 } 
-export default ToolGridHeader;
+export default GridHeader;

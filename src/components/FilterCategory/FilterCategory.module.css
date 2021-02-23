@@ -1,0 +1,11 @@
+.filterCategory {
+    display: inline-block;
+    flex-wrap: wrap;
+
+}
+
+.filterCategory > p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-left: 40px;
+}

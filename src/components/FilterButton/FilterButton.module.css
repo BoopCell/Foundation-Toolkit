@@ -1,0 +1,23 @@
+.filterButton{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 1px;
+    text-align: center;
+}
+.filterButton > button {
+    background-color: white;
+    border-color: rgb(79, 0, 116);
+    border-width: thin;
+    padding: 5px 15px;
+}
+.filterButton > button > p {
+    display:inline-block;
+    font-size: 10px;
+    color:  rgb(185, 153, 185);;
+}
+.filterButton > button > h2 {
+    display:inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color:  rgb(52, 0, 110);
+}

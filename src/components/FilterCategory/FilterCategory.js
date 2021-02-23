@@ -1,5 +1,5 @@
 import React from 'react';
-// import 'FilterBar.css';
+import Styles from './FilterCategory.module.css';
 import FilterButton from '../FilterButton/FilterButton';
 
 function FilterCategory({listOfData,buttonSize}) {
@@ -11,11 +11,11 @@ function FilterCategory({listOfData,buttonSize}) {
             buttonSubtitle = {item.count} 
             />)
     return (
-        <div>
-        <h2>{listOfData.title}</h2>
-        <ul>
-            {listItems}
-        </ul>
+        <div className = {Styles.filterCategory}>
+            <p>{listOfData.title}</p>
+            <ul>
+                {listItems}
+            </ul>
         </div>
     )
 }

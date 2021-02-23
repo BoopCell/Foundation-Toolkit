@@ -1,11 +1,13 @@
 import React from 'react';
-// import 'FilterBar.css';
 import FilterCategory from '../FilterCategory/FilterCategory';
 
-function FilterBar({data}) {
+function FilterBar({
+    filterBarStyle,
+    data
+}) {
     return (
-        <>
-        <FilterCategory 
+        <div className= {filterBarStyle}>
+        <FilterCategory
         listOfData = {data.categories}
         buttonSize = "large"
         />
@@ -17,7 +19,7 @@ function FilterBar({data}) {
         listOfData = {data.groupSizes}
         buttonSize = "small"
         />
-        </>
+        </div>
     )
 }
 export default FilterBar;

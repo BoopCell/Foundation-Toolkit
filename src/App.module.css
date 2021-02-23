@@ -1,0 +1,36 @@
+.header {
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:20px;
+    display: flex;
+    flex-wrap: nowrap;
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+    line-height: 20px;
+    text-align: center;
+    font-size: px;
+    padding: 25px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.header.logo {
+  font-size: larger;  
+  }
+.header.menu{
+    font-weight: bold;
+}
+.header > p {
+    font-weight: bold;
+  }
+
+.filterBar {
+    display:flex;
+    flex: 1 1 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: rgb(243, 243, 243);
+  }

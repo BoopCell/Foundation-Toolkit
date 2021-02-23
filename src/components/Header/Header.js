@@ -3,15 +3,19 @@ import React from 'react';
 
 function Header(
 {
-    HeaderLogo, 
-    HeaderTitle, 
-    HeaderMenuHamburger
+    headerStyle,
+    headerMenu,    
+    headerLogo, 
+    headerTitle, 
+    headerMenuHamburger,
+    
 }){
     return ( 
-    <div className="Header">
-        {HeaderLogo}
-        {HeaderTitle}
-        {HeaderMenuHamburger}
+    <div className= {headerStyle}>
+        <div className = "header logo">{headerLogo}</div>
+        <div className = "header title">{headerTitle}</div>
+        <div className = "header menu"> {headerMenu} = {headerMenuHamburger}</div>
+        
     </div>
     )
 } 

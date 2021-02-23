@@ -8,18 +8,22 @@ import CardGrid from './components/CardGrid/CardGrid';
 import GridHeader from './components/GridHeader/GridHeader';
 import ToolDetails from './assets/ToolDetails';
 import FilterDetails from './assets/FilterDetails';
+import Styles from './App.module.css';
 
 //App
 function App() {
   return (
     <>
-      <Header
-        HeaderLogo=""
-        HeaderTitle="Methods and Tools curated by Innovation and Incubation"
-        HeaderMenuHamburger="MENU"
+      <Header 
+        headerStyle = {Styles.header}
+        headerMenu = "? MENU" 
+        headerLogo="I&I TOOLBOX"
+        headerTitle="Methods & Tools curated by Innovation and Incubation"
+        headerMenuHamburger=""
       />
 
       <FilterBar
+      filterBarStyle = {Styles.filterBar}
       data = {FilterDetails}
       />
 
