@@ -3,10 +3,11 @@ import React from 'react';
 
 function Button(
 {
+    buttonStyle,
     title
 }){
     return ( 
-            <button>
+            <button className={buttonStyle}> 
                 {title}
             </button>
     )

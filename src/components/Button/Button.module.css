@@ -1,0 +1,13 @@
+.button{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin: 1px;
+    text-align: center;
+
+}
+.button > button {
+    background-color: white;
+    border-color: rgb(79, 0, 116);
+    border-width: thin;
+    padding: 5px 15px;
+}

@@ -1,11 +1,14 @@
 .filterCategory {
     display: inline-block;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
 
 .filterCategory > p {
+    flex-wrap:nowrap;
     font-family: sans-serif;
+    font-size: 14px;
     font-weight: lighter;
     padding-left: 40px;
+    
 }

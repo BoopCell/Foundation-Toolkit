@@ -1,0 +1,19 @@
+.cardStyles {
+    list-style-type: none;
+    text-align: center;
+    border-style: solid;
+    margin: 5px;
+    padding: 10px 100px;
+    block-size: 400px;
+
+}
+
+.image {
+    max-height: 200px;
+    width: auto;
+}
+
+.h4 {
+    
+    color: red;
+}

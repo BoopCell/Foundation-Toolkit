@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card'
-// import 'CardGrid.css';
+import Styles from './CardGrid.module.css';
 
 //Loop and output the grid
 function CardGrid({data}) {
@@ -16,10 +16,10 @@ function CardGrid({data}) {
             />
     );
     return (
-        <ul>
-        {listItems}
-        </ul>
-                    )
+            <ul className = {Styles.cardGridList}>
+                {listItems}
+            </ul>
+                        )
 }
 
 export default CardGrid;

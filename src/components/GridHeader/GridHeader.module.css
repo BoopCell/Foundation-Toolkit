@@ -1,3 +1,42 @@
-.gridHeader {
-    background: red;
+.gridHeaderContainer { 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(41, 41, 41);
+}
+
+.box1,.box2 {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.buttonL {
+    margin: 1px;
+    color: gray;
+    background-color: white;
+    border-color: rgb(79, 0, 116);
+    border-width: 0px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.buttonR {    
+    margin: 1px;
+    background-color: white;
+    border-color: rgb(79, 0, 116);
+    border-width: 0px;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
 }

@@ -32,7 +32,7 @@ const FilterDetails = {
         }
     ]},
     timeFrames: {
-        title: "Browse by Category",
+        title: "Browse by Time",
         list: [
         {
             desc: "5-30",
@@ -52,7 +52,7 @@ const FilterDetails = {
         }
     ]},
     groupSizes: {
-        title: "Browse by Category",
+        title: "Browse by Group Size",
         list: [
         {
             desc: "2-10",
