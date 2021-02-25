@@ -1,5 +1,5 @@
 import React from 'react';
-// import 'Header.css';
+import Styles from './Header.module.css';
 
 function Header(
 {
@@ -12,9 +12,9 @@ function Header(
 }){
     return ( 
     <div className= {headerStyle}>
-        <div className = "header logo">{headerLogo}</div>
-        <div className = "header title">{headerTitle}</div>
-        <div className = "header menu"> {headerMenu} = {headerMenuHamburger}</div>
+        <div className = {Styles.logoText}> <p className = {Styles.logo}>I&I</p> {headerLogo} </div>
+        <div className = {Styles.title} >{headerTitle}</div>
+        <div className = {Styles.menu} > {headerMenu} = {headerMenuHamburger}</div>
         
     </div>
     )

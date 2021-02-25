@@ -17,7 +17,7 @@ function App() {
       <Header 
         headerStyle = {Styles.header}
         headerMenu = "? MENU" 
-        headerLogo="I&I TOOLBOX"
+        headerLogo="TOOLBOX"
         headerTitle="Methods & Tools curated by Innovation and Incubation"
         headerMenuHamburger=""
       />

@@ -2,9 +2,11 @@
     list-style-type: none;
     text-align: center;
     border-style: solid;
+    border-radius: 0.5mm;
     margin: 5px;
     padding: 10px 100px;
-    block-size: 400px;
+    block-size: auto;
+    max-block-size: 350px 350px;
 
 }
 
@@ -13,7 +15,24 @@
     width: auto;
 }
 
+.h2 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(129, 129, 129);
+}
+.h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(81, 26, 184);
+}
+
 .h4 {
-    
-    color: red;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    color: rgb(129, 129, 129);
 }
