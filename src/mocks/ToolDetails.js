@@ -88,9 +88,9 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
         link: "https://toolbox.hyperisland.com/team-retrospective"},
     {
-        title: "The GROW Coaching Model",
+        title: "XXXXXXX",
         id: 12,
-        category: "TEAM",
+        category: "IDEATION",
         timeEst: "medium",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",

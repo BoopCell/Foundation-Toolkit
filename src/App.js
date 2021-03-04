@@ -17,30 +17,41 @@ if (process.env.NODE_ENV === "development") {
 //App
 function App() {
 
-  const [filterData,setFilterData] = useState([])// [default value, setValue], pass the initial value
+  const [filterData,setFilterData] = useState([]);// [default value, setValue], pass the initial value. Rule of thumb: Always pass an initial value corresponding to the data format you are going to receive
+  const [toolData,setToolData] = useState([]);// [default value, setValue], pass the initial value Rule of thumb: Always pass an initial value corresponding to the data format you are going to receive
+  const [ogToolData,setOgToolData] = useState([]);// [default value, setValue], pass the initial value
+  const [isLoading, setIsLoading] = useState(true); //best practice for booleans is the use isLoading or similar 
+
   useEffect(() => {
     fetch("https://api.github.com/users/hacktivist123/repos") //Response is from a restless api or graphql
     .then((tempFilterContainer) => tempFilterContainer.json())
     .then((jsonFilterContainer) => {
-    setFilterData(jsonFilterContainer);
+    setFilterData(jsonFilterContainer)
+    setIsLoading(false);
     });
     }, []); // empty = whenever a change is made to the DOM. [] = only one.  : when to trigger useEffect
 
-    const [toolData,setToolData] = useState()// [default value, setValue], pass the initial value
   useEffect(() => {
     fetch("https://api.github.com/users/hacktivist123/MARCUS") //Response is from a restless api or graphql
     .then((tempToolContainer) => tempToolContainer.json())
     .then((jsonToolContainer) => {
     setToolData(jsonToolContainer);
+    setOgToolData(jsonToolContainer);
+    setIsLoading(false);
     });
     }, []);
-    
+  
   function handleClick(cat) {
-    const filterData = toolData.filter(item => item.category.includes(cat));
-    setToolData(filterData)
+    const filteredToolData = ogToolData.filter(item => item.category.includes(cat)); /* Dry-coding: When you dont repeat yourself. DONT REPEAT YOURSELF! */
+    setToolData(filteredToolData)
+  }
+  
+  function handleAllClick() {
+    setToolData(ogToolData)
   }
 
   return (
+    
     <>
       <Header 
         headerStyle = {Styles.header}
@@ -52,20 +63,26 @@ function App() {
     {/* {JSON.stringify(toolData)}
     {JSON.stringify(filterData)} */}
 {/*       <div className = {Styles.WIP}>WIP</div> */}
+
       <button onClick = {() => handleClick('SELF-LEADERSHIP')}>
         Button1
       </button>
+      <button onClick = {() => handleClick('TEAM')}> {/* As soon as I want to pass a value to the function i need to initiate with an arrow function */}
+        Button2
+      </button>
+      <button onClick = {handleAllClick}>{/* No need to use () here*/}
+        Show ALL
+      </button>
+
       <FilterBar
       filterBarStyle = {Styles.filterBar}
       data = {filterData}
-      onClickEvent = {handleClick}
+      onClickEvent = {handleClick} // Try to think how to get this to work in deeper levels.....
       />
 
       <GridHeader />
+      {isLoading?<div>Loading...</div>:<CardGrid data = {toolData} />} {/* check inside a JSX return: "Conditional rendering", conditional css class e.g. */}
 
-      <CardGrid
-      data = {toolData}
-      />
     </>
   )
 }
@@ -80,6 +97,3 @@ export default App;
 // - Install CSS modules
 // - Enable SESS & SCSS (read and install, will have to make some mods to webpack)
 // - Start adding styling using CSS modules
-
-// Questions:
-// - Do you usually create the entire structure before adding styling or what does the workflow look like?
