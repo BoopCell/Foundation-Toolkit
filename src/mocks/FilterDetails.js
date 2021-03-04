@@ -36,19 +36,19 @@ const FilterDetails = {
         list: [
         {
             desc: "5-30",
-            count: " "
+            count: ""
         },
         {
             desc: "30-60",
-            count: " "
+            count: ""
         },
         {
             desc: "60-120",
-            count: " "
+            count: ""
         },
         {
             desc: "120-240",
-            count: " "
+            count: ""
         }
     ]},
     groupSizes: {
@@ -56,15 +56,15 @@ const FilterDetails = {
         list: [
         {
             desc: "2-10",
-            count: " "
+            count: ""
         }, 
         {
             desc: "10-40",
-            count: " "
+            count: ""
         }, 
         {
             desc: "40+",
-            count: " "
+            count: ""
         }
     ]}
 }

@@ -2,18 +2,22 @@ import React from 'react';
 import Styles from './FilterCategory.module.css';
 import FilterButton from '../FilterButton/FilterButton';
 
-function FilterCategory({listOfData,buttonSize}) {
-    const listItems = listOfData.list.map((item) => 
+function FilterCategory({
+    listOfData,
+    buttonSize, 
+    onClickEvent}) {
+    const listItems = listOfData?.list.map((item) => //literal if statement
             <FilterButton
             buttonSize = {buttonSize}
             key = {item.desc}
             buttonTitle = {item.desc}
-            buttonSubtitle = {item.count} 
+            buttonSubtitle = {item.count}
+            onClickEvent = {onClickEvent}
             />)
     return (
         <div className = {Styles.filterCategory}>
-            <p>{listOfData.title}</p>
-            <ul>
+            <p>{listOfData?.title}</p>
+            <ul className = {Styles.ul}>
                 {listItems}
             </ul>
         </div>

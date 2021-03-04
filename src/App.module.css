@@ -7,16 +7,30 @@
     background: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
-    line-height: 20px;
+    line-height: 10px;
     text-align: center;
     padding: 5px 10px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.425);
 }
 
 .filterBar {
-    display:flex;
-    flex: 1 1 0px;
+    display: flex;
+    flex: 0 1 auto;
     margin-left: 15%;
     margin-right: 15%;
     background: rgb(243, 243, 243);
   }
+
+  .WIP {
+    width: 200px;  
+    margin: auto;
+    background: yellow;
+    padding: 25px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    text-align: center;
+    font-family: monospace;
+    font-style: bold;  
+    box-shadow: 10px 10px grey;
+
+}

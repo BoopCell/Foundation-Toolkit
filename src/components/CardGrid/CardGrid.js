@@ -4,9 +4,10 @@ import Styles from './CardGrid.module.css';
 
 //Loop and output the grid
 function CardGrid({data}) {
-    const listItems = data.map((item) => 
+    console.log(data) //  Good practice to have a condition of data existing in order to render
+    const listItems = data?.map((item) => 
             <Card 
-            key = {item.title}
+            key = {item.id}
             title = {item.title} 
             category = {item.category}
             estTime = {item.timeEst} 
