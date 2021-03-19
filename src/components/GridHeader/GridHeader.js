@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button';
 import Styles from './GridHeader.module.css';
 
-function GridHeader(){
+function GridHeader({onClickEvent}){
     return (
         <div className = {Styles.gridHeaderContainer}>
                 <ul className = {Styles.box1}>
@@ -11,20 +11,24 @@ function GridHeader(){
                     </li>
                     <li>
                     <Button 
-                    buttonStyle = {Styles.buttonL}
+                    onClickEvent = {onClickEvent}
                     title = "LATEST"
+                    buttonStyle = {Styles.buttonL}
                 />
                     </li>
                     <Button 
-                    buttonStyle = {Styles.buttonL}
+                    onClickEvent = {onClickEvent}
                     title = "A-Z"
+                    buttonStyle = {Styles.buttonL}
                 />
                 </ul>  
 
             <div className = {Styles.box2} >
                 <Button 
+                    onClickEvent = {onClickEvent}
+                    title = "SHOW FEATURED"
                     buttonStyle = {Styles.buttonR}
-                    title = "SHOW FEATURED"/>
+                />
             </div>
         </div> 
         )

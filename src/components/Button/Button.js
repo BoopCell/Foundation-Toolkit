@@ -3,11 +3,12 @@ import React from 'react';
 
 function Button(
 {
-    buttonStyle,
-    title
+    onClickEvent,
+    title,
+    buttonStyle
 }){
     return ( 
-            <button className={buttonStyle}> 
+            <button className={buttonStyle} onClick={onClickEvent} data-category = {title}> 
                 {title}
             </button>
     )

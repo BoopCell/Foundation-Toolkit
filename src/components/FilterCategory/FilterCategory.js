@@ -9,7 +9,7 @@ function FilterCategory({
     const listItems = listOfData?.list.map((item) => //literal if statement
             <FilterButton
             buttonSize = {buttonSize}
-            key = {item.desc}
+            buttonKey = {item.key}
             buttonTitle = {item.desc}
             buttonSubtitle = {item.count}
             onClickEvent = {onClickEvent}

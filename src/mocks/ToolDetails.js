@@ -6,7 +6,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "any",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
-        link: "https://toolbox.hyperisland.com/end-of-year-reflection"},
+        link: "https://toolbox.hyperisland.com/end-of-year-reflection",
+        prio: "FEATURED",
+        dateAdded: "2020-11-12T23:28:56.782+1"},
     {
         title: "Team Retrospective",
         id: 2,
@@ -14,7 +16,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
-        link: "https://toolbox.hyperisland.com/team-retrospective"},
+        link: "https://toolbox.hyperisland.com/team-retrospective",
+        prio: "FEATURED",
+        dateAdded: "2020-11-11T23:28:56.782+1"},
     {
         title: "The GROW Coaching Model",
         id: 3,
@@ -22,7 +26,9 @@ const ToolDetails = [
         timeEst: "medium",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
-        link: "https://toolbox.hyperisland.com/the-grow-coaching-model"},
+        link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
+        prio: "FEATURED",
+        dateAdded: "2020-11-01T23:28:56.782+1"},
     {
         title: "End of Year Reflection",
         id: 4,
@@ -30,7 +36,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "any",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
-        link: "https://toolbox.hyperisland.com/end-of-year-reflection"},
+        link: "https://toolbox.hyperisland.com/end-of-year-reflection",
+        prio: "",
+        dateAdded: "2020-09-01T23:28:56.782+1"},
     {
         title: "Team Retrospective",
         id: 5,
@@ -38,7 +46,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
-        link: "https://toolbox.hyperisland.com/team-retrospective"},
+        link: "https://toolbox.hyperisland.com/team-retrospective",
+        prio: "",
+        dateAdded: "2020-08-01T23:28:56.782+1"},
     {
         title: "The GROW Coaching Model",
         id: 6,
@@ -46,7 +56,9 @@ const ToolDetails = [
         timeEst: "medium",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
-        link: "https://toolbox.hyperisland.com/the-grow-coaching-model"},
+        link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
+        prio: "",
+        dateAdded: "2020-07-01T23:28:56.782+1"},
     {
         title: "End of Year Reflection",
         id: 7,
@@ -54,7 +66,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "any",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
-        link: "https://toolbox.hyperisland.com/end-of-year-reflection"},
+        link: "https://toolbox.hyperisland.com/end-of-year-reflection",
+        prio: "",
+        dateAdded: "2020-06-01T23:28:56.782+1"},
     {
         title: "Team Retrospective",
         id: 8,
@@ -62,7 +76,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
-        link: "https://toolbox.hyperisland.com/team-retrospective"},
+        link: "https://toolbox.hyperisland.com/team-retrospective",
+        prio: "",
+        dateAdded: "2020-05-01T23:28:56.782+1"},
     {
         title: "The GROW Coaching Model",
         id: 9,
@@ -70,7 +86,9 @@ const ToolDetails = [
         timeEst: "medium",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
-        link: "https://toolbox.hyperisland.com/the-grow-coaching-model"},
+        link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
+        prio: "",
+        dateAdded: "2020-04-01T23:28:56.782+1"},
     {
         title: "End of Year Reflection",
         id: 10,
@@ -78,7 +96,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "any",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
-        link: "https://toolbox.hyperisland.com/end-of-year-reflection"},
+        link: "https://toolbox.hyperisland.com/end-of-year-reflection",
+        prio: "",
+        dateAdded: "2020-03-01T23:28:56.782+1"},
     {
         title: "Team Retrospective",
         id: 11,
@@ -86,7 +106,9 @@ const ToolDetails = [
         timeEst: "small",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
-        link: "https://toolbox.hyperisland.com/team-retrospective"},
+        link: "https://toolbox.hyperisland.com/team-retrospective",
+        prio: "",
+        dateAdded: "2020-02-01T23:28:56.782+1"},
     {
         title: "XXXXXXX",
         id: 12,
@@ -94,7 +116,9 @@ const ToolDetails = [
         timeEst: "medium",
         groupSizeEst: "small",
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
-        link: "https://toolbox.hyperisland.com/the-grow-coaching-model"}
+        link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
+        prio: "",
+        dateAdded: "2020-01-01T23:28:56.782+1"}
 ]
 
 export default ToolDetails;
