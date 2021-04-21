@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import CardGrid from './components/CardGrid/CardGrid';
 import GridHeader from './components/GridHeader/GridHeader';
 import Styles from './App.module.css';
+import Button from './components/Button/Button'
 
 if (process.env.NODE_ENV === "development") {
   const { worker } = require("./mocks/browser");
@@ -19,11 +20,10 @@ function App() {
   const [toolData,setToolData] = useState([]);// [default value, setValue], pass the initial value Rule of thumb: Always pass an initial value corresponding to the data format you are going to receive
   const [ogToolData,setOgToolData] = useState([]);// [default value, setValue], pass the initial value
   const [isLoading, setIsLoading] = useState(true); //best practice for booleans is the use isLoading or similar
-  const [isFilterError, setIsFilterError] = useState(false); //best practice for booleans is the use isLoading or similar
-  const [isCardError, setIsCardError] = useState(false); //best practice for booleans is the use isLoading or similar 
+  const [isFilterError, setIsFilterError] = useState(false); //
+  const [isCardError, setIsCardError] = useState(false); //
   //Too many states (8+) - Then use useReduce
  
-
   useEffect(() => {
     fetch("https://api.github.com/users/hacktivist123/repos") //Response is from a restless api or graphql
     .then((tempFilterContainer) => tempFilterContainer.json())
@@ -55,16 +55,31 @@ function App() {
     const buttonTarget = e.target.closest('button');
     const dataCategory = buttonTarget.getAttribute("data-category");
     const filteredToolData = ogToolData.filter(item => item.category.includes(dataCategory));
-    const toolDataOnDate = toolData.sort((a,b) => (a.dateAdded>b.dateAdded)) ? 1: -1;
-    const toolDataOnAZ = toolData.sort((a,b) => (a.title>b.title)) ? 1: -1;
-    
-    return dataCategory === 'ALL' ? setToolData(ogToolData)
-      : dataCategory === 'A-Z' ? setToolData(toolDataOnAZ)
-      : dataCategory === 'FEATURED' ? setToolData(filteredToolData)
-      : dataCategory === 'LATEST' ? setToolData(toolDataOnDate) 
-      : setToolData(filteredToolData);
+    return dataCategory === 'ALL' ? setToolData(ogToolData): setToolData(filteredToolData);
   }
- 
+  function handleFeature() {
+    setToolData(ogToolData.filter(item => item.prio.includes("FEATURED")));
+  }
+  function handleLatest() {
+    const toolDataOnDate = ogToolData.sort(
+      function dateCompare(a, b) {
+        var dateB = new Date(b.dateAdded);
+        var dateA = new Date(a.dateAdded);
+        return dateA - dateB;
+      });
+    setToolData(toolDataOnDate);
+  }
+  function handleChrono() {
+    const toolDataOnAZ = ogToolData.sort(
+      function compare(a, b) {
+        if (a.title > b.title)
+          return 1;
+        else
+          return -1;
+      });
+    setToolData(toolDataOnAZ);
+  }
+  
   return (
     <>
       <Header 
@@ -75,19 +90,9 @@ function App() {
         headerMenuHamburger= ""
       />
 
-     {/*  {JSON.stringify(toolData)} */}
-     {/*  {JSON.stringify(filterData)} */}
-    {/*   <div className = {Styles.WIP}>WIP</div> */}
-
-      {/* <button onClick = {() => handleClick('SELF-LEADERSHIP')}>
-        Button1
-      </button>
-      <button onClick = {() => handleClick('TEAM')}> 
-        Button2
-      </button>
-      <button onClick = {handleAllClick}>
-        Show ALL
-      </button> */}
+     {/* {JSON.stringify(toolData)}
+     <div> ///// </div>
+     {JSON.stringify(filterData)} */}
 
       {!isFilterError&&<FilterBar
       filterBarStyle = {Styles.filterBar}
@@ -96,12 +101,24 @@ function App() {
       />}
       
 {console.log(isCardError)}
+      <GridHeader style = {Styles.GridHeader}>
+                <Button 
+                    onClickEvent = {handleLatest}
+                    title = "LATEST"
+                    buttonStyle = {Styles.buttonL}
+                />
+                <Button 
+                    onClickEvent = {handleChrono}
+                    title = "A-Z"
+                    buttonStyle = {Styles.buttonL}
+                />
+                <Button 
+                  onClickEvent = {handleFeature}
+                  title = "SHOW FEATURED"
+                  buttonStyle = {Styles.buttonR}
+                />  
+      </GridHeader>
       
-      <GridHeader 
-      data = {toolData}
-      onClickEvent = {handleClick}
-      />
-
       {isLoading?<div>Loading...</div>: isCardError?<div>Data error...</div>: <CardGrid data = {toolData} />} 
       {/* check inside a JSX return: "Conditional rendering", conditional css class e.g. */}
 

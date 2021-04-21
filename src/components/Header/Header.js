@@ -14,6 +14,8 @@ function Header(
     <div className= {headerStyle}>
         <div className = {Styles.logoText}> <p className = {Styles.logo}>I&I</p> {headerLogo} </div>
         <div className = {Styles.title} >{headerTitle}</div>
+        <Burger></Burger>
+        <Menu></Menu>
         <div className = {Styles.menu} > {headerMenu} = {headerMenuHamburger}</div>
         
     </div>

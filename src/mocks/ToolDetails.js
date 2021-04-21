@@ -8,7 +8,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
         link: "https://toolbox.hyperisland.com/end-of-year-reflection",
         prio: "FEATURED",
-        dateAdded: "2020-11-12T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "Team Retrospective",
         id: 2,
@@ -18,7 +18,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
         link: "https://toolbox.hyperisland.com/team-retrospective",
         prio: "FEATURED",
-        dateAdded: "2020-11-11T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "The GROW Coaching Model",
         id: 3,
@@ -28,7 +28,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
         link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
         prio: "FEATURED",
-        dateAdded: "2020-11-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "End of Year Reflection",
         id: 4,
@@ -38,7 +38,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
         link: "https://toolbox.hyperisland.com/end-of-year-reflection",
         prio: "",
-        dateAdded: "2020-09-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "Team Retrospective",
         id: 5,
@@ -48,7 +48,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
         link: "https://toolbox.hyperisland.com/team-retrospective",
         prio: "",
-        dateAdded: "2020-08-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "The GROW Coaching Model",
         id: 6,
@@ -58,7 +58,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
         link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
         prio: "",
-        dateAdded: "2020-07-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "End of Year Reflection",
         id: 7,
@@ -78,7 +78,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
         link: "https://toolbox.hyperisland.com/team-retrospective",
         prio: "",
-        dateAdded: "2020-05-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "The GROW Coaching Model",
         id: 9,
@@ -88,7 +88,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
         link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
         prio: "",
-        dateAdded: "2020-04-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "End of Year Reflection",
         id: 10,
@@ -98,7 +98,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1574194286/head-14.png",
         link: "https://toolbox.hyperisland.com/end-of-year-reflection",
         prio: "",
-        dateAdded: "2020-03-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "Team Retrospective",
         id: 11,
@@ -108,7 +108,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1608642091/hand_-22.png",
         link: "https://toolbox.hyperisland.com/team-retrospective",
         prio: "",
-        dateAdded: "2020-02-01T23:28:56.782+1"},
+        dateAdded: "Sat Oct 29 2016 00:00:00 GMT-0700 (PDT)"},
     {
         title: "XXXXXXX",
         id: 12,
@@ -118,7 +118,7 @@ const ToolDetails = [
         imgURL: "https://d2pkxcbvqexja0.cloudfront.net/uploads/tools/1601642138/team-04-(1).png",
         link: "https://toolbox.hyperisland.com/the-grow-coaching-model",
         prio: "",
-        dateAdded: "2020-01-01T23:28:56.782+1"}
+        dateAdded: "Fri Oct 28 2016 00:00:00 GMT-0700 (PDT)"}
 ]
 
 export default ToolDetails;

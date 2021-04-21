@@ -34,3 +34,32 @@
     box-shadow: 10px 10px grey;
 
 }
+
+.buttonL {
+  margin: 1px;
+  color: gray;
+  background-color: white;
+  border-color: rgb(79, 0, 116);
+  border-width: 0px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.buttonR {   
+  margin: 1px;
+  background-color: white;
+  border-color: rgb(79, 0, 116);
+  border-width: 0px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.GridHeader {
+  margin-left:15%;
+  margin-right:15%;
+  display: flex;
+}
